@@ -2,7 +2,7 @@ import React from "react";
 import { ThemeProvider } from "@kiwicom/orbit-components";
 import styled from "styled-components";
 
-import theme from "../theme";
+import defaultTheme from "../theme";
 import Navbar from "./Navbar";
 
 const StyledWrapper = styled.div`
@@ -34,7 +34,7 @@ interface Props {
 
 export default function Layout({ children }: Props) {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={defaultTheme}>
       <StyledWrapper>
         <Navbar />
         <StyledMain>{children}</StyledMain>
