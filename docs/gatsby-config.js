@@ -51,6 +51,15 @@ module.exports = {
               dashes: `oldschool`,
             },
           },
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              linkImagesToOriginal: false,
+              // The base for generating different image widths.
+              maxWidth: 590,
+              showCaptions: ["title"],
+            },
+          },
         ],
         rehypePlugins: [],
       },
