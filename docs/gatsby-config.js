@@ -31,7 +31,7 @@ module.exports = {
             options: {
               linkImagesToOriginal: false,
               // The base for generating different image widths.
-              maxWidth: 736,
+              maxWidth: 590,
               showCaptions: ["title"],
             },
           },
@@ -49,15 +49,6 @@ module.exports = {
             options: {
               backticks: false,
               dashes: `oldschool`,
-            },
-          },
-          {
-            resolve: "gatsby-remark-images",
-            options: {
-              linkImagesToOriginal: false,
-              // The base for generating different image widths.
-              maxWidth: 590,
-              showCaptions: ["title"],
             },
           },
         ],
