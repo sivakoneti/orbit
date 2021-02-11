@@ -12,6 +12,7 @@ const build = () => {
     name: "javascript/foundation",
     transforms: [
       "attribute/nov",
+      "attribute/nov/camelCase",
       "attribute/nov/alias",
       "attribute/nov/type",
       "name/nov/camel",
@@ -22,7 +23,13 @@ const build = () => {
   });
   StyleDictionary.registerTransformGroup({
     name: "javascript/tokens",
-    transforms: ["attribute/nov", "attribute/nov/type", "value/nov/alias", "name/nov/camel"],
+    transforms: [
+      "attribute/nov",
+      "attribute/nov/camelCase",
+      "attribute/nov/type",
+      "value/nov/alias",
+      "name/nov/camel",
+    ],
   });
   StyleDictionary.registerTransformGroup({
     name: "xml/tokens",
